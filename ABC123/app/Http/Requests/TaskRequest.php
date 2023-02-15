@@ -36,8 +36,10 @@ class TaskRequest extends FormRequest
     public function messages(){
         return [
             'required' => 'isian :attribute harus diisi',
-            'user.required' => 'nama pengguna harus diisi',
-            'task.required' => 'penugasan harus diisi'
+            'user.required' => 'judul laporan harus diisi',
+            'task.required' => 'deskripsi laporan harus diisi',
+            'user.required' => 'tingkatan laporan harus diisi'
         ];
     }
 }
+X

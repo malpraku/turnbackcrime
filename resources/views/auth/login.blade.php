@@ -15,7 +15,7 @@
 @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
-            Oops! Looks like you've stumbled upon an error. To learn more, visit the link below.<br><a href="https://www.youtube.com/watch?v=QDia3e12czc">http://bukantemen.vallian/faq.html#error</a>
+            Maaf, kami menemukan kendala di sistem kami. Baca kode error dibawah, atau kunjungi link dibawah.<br><a href="https://www.youtube.com/watch?v=QDia3e12czc">http://bukantemen.vallian/faq.html#error</a>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
             @endforeach
