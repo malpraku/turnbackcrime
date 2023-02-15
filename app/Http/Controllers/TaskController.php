@@ -30,9 +30,14 @@ class TaskController extends Controller
         
     }
 
-    public function show($id) {
+    public function search($id) {
         $task = Task::find($id);
         return $task;
+    }
+
+    public function check($id) {
+        $item = Task::find($id);
+        return view('task.check', compact('item'));
     }
 
     public function create(){

@@ -20,11 +20,11 @@
                 @method('PATCH')
                 <div class="mb-3">
                     <label for="" class="form-label">User</label>
-                    <input name="user" type="text" class="form-control" placeholder='{{$task->user}}' value="{{ old('user'),$task->user }}">
+                    <input name="user" type="text" class="form-control" placeholder='{{$task->title}}' value="{{ old('user'),$task->title }}">
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Task</label>
-                    <textarea name="task" placeholder='{{$task->task}}' class="form-control" id="" rows="3">{{ old('task'),$task->task }}</textarea>
+                    <textarea name="task" placeholder='{{$task->description}}' class="form-control" id="" rows="3">{{ old('task'),$task->description }}</textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Edit</button>
             </form>
