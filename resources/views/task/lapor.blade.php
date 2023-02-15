@@ -18,17 +18,17 @@
             <form action='{{ url ('/tasks') }}' method="POST">
                 @csrf
                 <div class="mb-3">
-                    <label for="" class="form-label">User</label>
+                    <label for="" class="form-label">Nama Pelapor (bila anonim, isi "-")</label>
                     <input name="user" type="text" class="form-control" value="{{ old('task') }}">
-                    @error('task')
+                    @error('user')
                         <span class="text-danger">
                             <li>{{ $message }}</li>
                         </span>
                     @enderror
                 <div class="mb-3">
                     <label for="" class="form-label">Judul Laporan</label>
-                    <input name="user" type="text" class="form-control" placeholder='Masukkan judul laporan anda...'>
-                    @error('user')
+                    <input name="task" type="text" class="form-control" placeholder='Masukkan judul laporan anda...'>
+                    @error('task')
                     <span class="text-danger">
                         <li>{{ $message }}</li>
                     </span>
@@ -36,27 +36,27 @@
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Deskripsi Laporan</label>
-                    <textarea name="task" placeholder='Ceritakan kronologi dan detail lengkap sepengetahuan anda!' class="form-control" id="" rows="3"></textarea>
-                    @error('user')
+                    <textarea name="level" placeholder='Ceritakan kronologi dan detail lengkap sepengetahuan anda!' class="form-control" id="" rows="3"></textarea>
+                    @error('task')
                     <span class="text-danger">
                         <li>{{ $message }}</li>
                     </span>
                 @enderror
                 </div>
+                <!-- 
                 <div class="mb-3">
                     <label for="" class="form-label">Tingkatan Kasus</label>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih tingkatan lapor...</option>
                             <option value="1">RINGAN</option>
                             <option value="2">SEDANG</option>
                             <option value="3">TINGGI</option>
                         </select>
-                        @error('user')
+                        @error('level')
                     <span class="text-danger">
                         <li>{{ $message }}</li>
                     </span>
                 @enderror
-                </div>
+                </div> -->
                 
 
                 <button type="submit" class="btn btn-primary">Kirim Laporan</button>

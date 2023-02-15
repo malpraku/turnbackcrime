@@ -3,7 +3,7 @@
 
     <div class="border rounded mt-5 mx-auto d-flex flex-column align-items-stretch bg-secondary" style="width: 800px;">
         <div class="d-flex justify-content-between flex-shrink-0 p-3 white  border-bottom">
-            <span class="fs-5 fw-semibold">Task Management</span>
+            <span class="fs-5 fw-semibold">Tabel Laporan</span>
             <span class="fs-5 fw-semibold">Total: {{ $data->total() }}</span>
             <a href="{{ url ('/tasks/create') }}" class="btn btn-sm btn-primary">add</a>
         </div>

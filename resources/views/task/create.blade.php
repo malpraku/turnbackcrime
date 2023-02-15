@@ -29,27 +29,28 @@
                 <div class="mb-3">
                     <label for="" class="form-label">Deskripsi Laporan</label>
                     <textarea name="task" placeholder='Ceritakan kronologi dan detail lengkap sepengetahuan anda!' class="form-control" id="" rows="3"></textarea>
-                    @error('user')
+                    @error('task')
                     <span class="text-danger">
                         <li>{{ $message }}</li>
                     </span>
                 @enderror
                 </div>
+                <!-- 
                 <div class="mb-3">
                     <label for="" class="form-label">Tingkatan Kasus</label>
-                        <select class="form-select" aria-label="Default select example">
+                        <select name="level" class="form-select" aria-label="Default select example">
                             <option selected>Pilih tingkatan lapor...</option>
                             <option value="1">RINGAN</option>
                             <option value="2">SEDANG</option>
                             <option value="3">TINGGI</option>
                         </select>
-                        @error('user')
+                        @error('level')
                     <span class="text-danger">
                         <li>{{ $message }}</li>
                     </span>
                 @enderror
                 </div>
-                
+            -->
 
                 <button type="submit" class="btn btn-primary">Kirim Laporan</button>
             </form>
