@@ -35,6 +35,10 @@ class TaskController extends Controller
         return $task;
     }
 
+    public function cekstatus(){
+        return view('task.cari');
+    }
+
     public function check($id) {
         $item = Task::find($id);
         return view('task.check', compact('item'));
@@ -54,7 +58,7 @@ class TaskController extends Controller
             'user' => $request->user
         ]);
         // return 'Success';
-        return redirect('/tasks');
+        return redirect('/kasus');
     }
 
     public function edit($id){
@@ -68,13 +72,13 @@ class TaskController extends Controller
             'task' => $request->task,
             'user' => $request->user
         ]);
-        return redirect('/tasks');
+        return redirect('/kasus');
     }
 
     public function delete($id) {
         $task = Task::find($id)
         ->delete();
-        return redirect('/tasks');
+        return redirect('/kasus');
     }
 
 }

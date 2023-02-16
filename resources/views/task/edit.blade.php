@@ -15,7 +15,7 @@
 <div class="mt-5 mx-auto" style="width: 380px">
     <div class="card">
         <div class="card-body">
-            <form action='{{ url ("/tasks/$task->id") }}' method="POST">
+            <form action='{{ url ("/kasus/$task->id") }}' method="POST">
                 @csrf
                 @method('PATCH')
                 <div class="mb-3">

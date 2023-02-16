@@ -15,7 +15,7 @@
 <div class="mt-5 mx-auto" style="width: 380px">
     <div class="card">
         <div class="card-body">
-            <form action='{{ url ('/tasks') }}' method="POST">
+            <form action='{{ url ('/kasus') }}' method="POST">
                 @csrf
                 <div class="mb-3">
                     <label for="" class="form-label">Nama Pelapor (bila anonim, isi "-")</label>
